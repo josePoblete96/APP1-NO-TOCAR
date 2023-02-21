@@ -8,25 +8,35 @@
     <title>App web SportsMD</title>
 </head>
 <body>
-<main class="main-content">
-  <form class="box">
-    <div class="field">
-      <label class="label">Email</label>
-      <div class="control">
-        <input class="input" type="email" placeholder="e.g. alex@example.com">
+  <nav class="navbar bg-primary navbar-expand-lg bg-body-primary ">
+    <div class="container-fluid">
+      <img src="https://www.sportsmd.cl/wp-content/uploads/2020/11/logo-sports.png" style="background-color:rgb(19, 161, 45);" width="50" height="50>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          <a class="nav-link" href="#">Atras</a>
+          <a class="nav-link" href="#">Cerrar sesion</a>
+        </div>
       </div>
     </div>
-  
-    <div class="field">
-      <label class="label">Contraseña</label>
-      <div class="control">
-        <input class="input" type="password" placeholder="********">
-      </div>
+  </nav>
+  <h2><div class="mx-auto" style="width: 200px;">
+  <form class="box" >
+    <div class="mb-3">
+      <label for="user" class="form-label">Numero de rut</label>
+      <input class="form form-control" type="number" placeholder="ej 12345678-9">
+      <div id="emailHelp" class="form-text">Ingrese su rut sin puntos y con guion.</div>
     </div>
   
-    <button class="button is-primary">Sign in</button>
+    <div class="mb-3">
+      <label for="password" class="form-label">Contraseña</label>
+      <input type="password" class="form-control" id="contraseña">
+    </div>
+  
+    <button type="sub" class="btn btn-primary">Conectar</button>
   </form>
-</main>
+  </div>
   <script src="js/app.js"></script>
+</h2>
 </body>
 </html>

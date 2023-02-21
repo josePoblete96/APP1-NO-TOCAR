@@ -8,29 +8,47 @@
     <title>Resumen semanal</title>
 </head>
 <body>
-    <form >
-        <h1>Ingresar sucursal
-            <select name="Sucursal">
-            <option value="value1" selected>6 Norte</option>
-            <option value="value2" >Bosques de montemar</option>
-            <option value="value3">Los castaños</option>
-            <option value="value4">Novotel</option>
-            <option value="value5">Valparaiso</option>
-            <option value="value6">Villa alemana</option>
-          </select>
-        </h1>
-        <h2>
-          <label for="fecha"> Fecha inicio</label>
-          <input type="date" id="start" name="fecha-inicial"
-           value="2023-02-17"
-           min="2023-02-17" max="2040-12-31">
-           <label for="fecha"> Fecha termino</label>
-           <input type="date" id="start" name="fecha-final"
-            value="2023-02-17"
-            min="2023-02-17" max="2040-12-31">
-        </h2>
-        <input type="button" name="consultar" value="consultar">    
-    </form>
+    <nav class="navbar bg-primary navbar-expand-lg bg-body-primary ">
+        <div class="container-fluid">
+          <img src="https://www.sportsmd.cl/wp-content/uploads/2020/11/logo-sports.png" style="background-color:rgb(19, 161, 45);" width="50" height="50>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link" href="#">Atras</a>
+              <a class="nav-link" href="#">Cerrar sesion</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <h1><label for="sucursal"> Ingrese sucursal</label>
+                    <form >
+                        <select class="form-control" name="Sucursal">
+                            <option value="value1" selected>6 Norte</option>
+                            <option value="value2" >Bosques de montemar</option>
+                            <option value="value3">Los castaños</option>
+                            <option value="value4">Novotel</option>
+                            <option value="value5">Valparaiso</option>
+                            <option value="value6">Villa alemana</option>
+                        </select>
+                    </h1>
+                    <h2>
+                        <label for="fecha"> Fecha inicio</label>
+                        <input type="date" id="start" name="fecha-inicial"
+                            value="2023-02-17"
+                            min="2023-02-17" max="2040-12-31">
+                        <label for="fecha"> Fecha termino</label>
+                        <input type="date" id="start" name="fecha-final"
+                            value="2023-02-17"
+                            min="2023-02-17" max="2040-12-31">
+                    </h2>
+                    <input type="button" name="consultar" value="consultar">    
+                    </form>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8" >
     <h3>
         <table class="default">
             <tr>
@@ -60,5 +78,6 @@
     <h4><input type="button" name="revisar" value="Subir revisiones"></h4>
     <h5><input type="button" name="Volver" value="Volver">
         <input type="button" name="Salir" value="Salir"></h5>
+        </div>
 </body>
 </html>
