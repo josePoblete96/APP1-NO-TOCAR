@@ -8,35 +8,54 @@
     <title>Consultar honorarios</title>
 </head>
 <body>
-    <h1>Consultar honorarios</h1>
-    <form >
-        <h2>Ingresar mes</h2>
-        <label for="fecha"> Ingrese mes y año</label>
-      <input type="month" id="start" name="mes-año"
-       value="mes y año"
-       min="2023-02-17" max="2040-12-31">
-     </form>
-     <h3>
-        <table class="default">
-            <tr>
-            <th>Mes</th>
-            <th>Total derivaciones kinesiologia</th>
-            <th>Total  derivaciones resonancia</th>
-            <th>Total de pacientes atendidos</th>
-            <th>Total arriendo</th>
-            <th>Total honorarios</th>
-            </tr>
-            <tr>
-            <td>enero-2023</td>
-            <td>15</td>
-            <td>14</td>
-            <td>300</td>
-            <td> $450.000</td>
-            <td> $2.800.000</td>
-            </tr>
-        </table>
-        <h4><input type="submit" value="Descargar detalles"></h4>
-        <h5> <input type="submit" value="Salir"></h5>
+    <nav class="navbar bg-primary navbar-expand-lg bg-body-primary ">
+        <div class="container-fluid">
+          <img src="https://www.sportsmd.cl/wp-content/uploads/2020/11/logo-sports.png" style="background-color:rgb(19, 161, 45);" width="50" height="50>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link" href="#">Atras</a>
+              <a class="nav-link" href="#">Cerrar sesion</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <h1>Consultar honorarios</h1>
+                <form >
+                    <label class="form-label" for="fecha"> Ingrese mes y año</label>
+                    <input type="month" id="start" name="mes-año"
+                    value="mes y año"
+                    min="2023-02-17" max="2040-12-31">
+                </form>
+                <input type="button" class ="btn btn-primary" name="revisar" value="Consultar">
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                <table class="table table-bordered">
+                <tr>
+                <th>Mes</th>
+                <th>Total derivaciones kinesiologia</th>
+                <th>Total  derivaciones resonancia</th>
+                <th>Total de pacientes atendidos</th>
+                <th>Total arriendo</th>
+                <th>Total honorarios</th>
+                </tr>
+                <tr>
+                <td>enero-2023</td>
+                <td>15</td>
+                <td>14</td>
+                <td>300</td>
+                <td> $450.000</td>
+                <td> $2.800.000</td>
+                </tr>
+                </table>
+                <input type="submit" class ="btn btn-primary" value="Descargar detalles">
+                <input type="submit" class ="btn btn-primary" value="Salir">
+            </div>
+        <h4></h4>
+        <h5> </h5>
      </h3>
 </body>
 </html>
