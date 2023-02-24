@@ -24,7 +24,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                    <h1><label class="form-label"for="sucursal"> Ingrese sucursal</label>
+                    <h1>Resumen semanal    
+                    </h1>
+                    <label class="form-label"for="sucursal"> Ingrese sucursal</label>
                     <form >
                         <select class="form-control" name="Sucursal">
                             <option value="value1" selected>6 Norte</option>
@@ -34,20 +36,23 @@
                             <option value="value5">Valparaiso</option>
                             <option value="value6">Villa alemana</option>
                         </select>
-                    </h1>
-                    <h2>
+                    
+                    <div>
                         <label class="form-label" for="fecha"> Fecha inicio</label>
                         <input type="date" id="start" name="fecha-inicial"
                             value="2023-02-17"
                             min="2023-02-17" max="2040-12-31">
-                    </h2>
-                    <h3>
+                    
+                        </div>
+                        <div>
                         <label for="fecha" class="form-label" > Fecha termino</label>
                         <input type="date" id="start" name="fecha-final"
                             value="2023-02-17"
                             min="2023-02-17" max="2040-12-31">
-                    </h3>    
-                    <input type="button" class="btn btn-primary" name="consultar" value="consultar">    
+                        </div>
+                        <div>
+                    <input type="button" class="btn btn-primary" name="consultar" value="consultar">   
+                </div> 
                     </form>
                 </div>
                 <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8" >
@@ -62,12 +67,12 @@
                     <th>Revisado</th>
                     </tr>
                     <tr>
-                    <td> SECRETARIA NAPA</td>
-                    <td>NAMEKUSEI</td>
-                    <td>23-02-1996</td>
+                    <td> Secretaria Ana</td>
+                    <td>6 Norte</td>
+                    <td>23-02-2023</td>
                     <td>8000</td>
-                    <td>SI</td>
-                    <td>FALTA EFECTIVO</td>
+                    <td>Si</td>
+                    <td>Falta efectivo</td>
                     <td><select name="Revision">
                     <option value="value1" selected>Revisado</option>
                     <option value="value2" >Revisado incorrecto</option>
