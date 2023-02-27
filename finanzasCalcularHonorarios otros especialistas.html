@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Calcular Honorarios No Medicos</title>
+</head>
+<body>
+    <nav class="navbar bg-primary navbar-expand-lg bg-body-primary ">
+        <div class="container-fluid">
+          <img src="https://www.sportsmd.cl/wp-content/uploads/2020/11/logo-sports.png" style="background-color:rgb(19, 161, 45);" width="50" height="50>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link active" href="#">Atras</a>
+              <a class="nav-link active" href="#">Cerrar sesion</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <h1>Calcular honorarios otros especialistas
+                    </h1>
+                    
+                    <form >
+                    <div>
+                        <label class="form-label" for="fecha"> Ingrese mes</label>
+                        <input type="month" class="form-control" id="start" name="fecha-inicial">
+                        </div>
+                        <div>
+                    <input type="button" class="btn btn-primary" name="consultar" value="Calcular">   
+                </div> 
+                    </form>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8" >
+                    <table class="table table-bordered">
+                    <tr>
+                    <th>Especialistas</th>
+                    <th>Especialidad</th>
+                    <th>Total de atenciones</th>
+                    <th>Honorarios brutos</th>
+                    <th>Descuentos</th>
+                    <th>Honorarios netos</th>
+                    </tr>
+                    <tr>
+                    <td>Ana alvear</td>
+                    <td>Terapeuta ocupacional</td>
+                    <td>123</td>
+                    <td>1345555555</td>
+                    <td>100</td>
+                    <td>1345555455</td>
+                
+                    </table>
+                    <input type="button" class ="btn btn-primary" name="revisar" value="Subir calculos">
+                    
+                </div>
+</body>
+</html>
