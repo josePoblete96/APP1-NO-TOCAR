@@ -20,7 +20,7 @@
     </nav>
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2">
                 <h1>Consultar honorarios</h1>
                 <form >
                     <label class="form-label" for="fecha"> Ingrese mes y año</label>
@@ -28,8 +28,12 @@
                     value="mes y año"
                     min="2023-02-17" max="2040-12-31">
                 </form>
-                <input type="button" class ="btn btn-primary" name="revisar" value="Consultar">
+                <br>
+                <div>
+                    <input type="button" class ="btn btn-primary" name="revisar" value="Consultar">
+                </div>
             </div>
+            
             <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
                 <table class="table table-bordered">
                 <tr>
@@ -39,6 +43,8 @@
                 <th>Total de pacientes atendidos</th>
                 <th>Total arriendo</th>
                 <th>Total honorarios</th>
+                <th>Acepta el honorario</th>
+                <th>Observacion del medico</th>
                 </tr>
                 <tr>
                 <td>enero-2023</td>
@@ -47,6 +53,12 @@
                 <td>300</td>
                 <td> $450.000</td>
                 <td> $2.800.000</td>
+                <td><select name="acepta" id="">
+                    <option value="si" selected>Si</option>
+                    <option value="no">No</option>
+                </select></td>
+                <td><textarea class="form-control" type="text" aria-label="Observacion del medico"></textarea>
+                </td>
                 </tr>
                 </table>
                 <input type="submit" class ="btn btn-primary" value="Descargar detalles">
